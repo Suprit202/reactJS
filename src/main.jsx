@@ -4,6 +4,7 @@ import { DataBinding } from './components/data-binding/dataBinding.jsx'
 import { DataType } from './components/data-type/data-type.jsx'
 import { Ajax } from './components/ajax/ajax.jsx'
 import { ClassBinding } from './components/classBinding/classBinding.jsx'
+import { EventBinding } from './components/eventBinding/eventBinding.jsx'
 import { Form } from './components/form/form.jsx'
 import { Login } from './components/login/login.jsx'
 import { NetflixIndex } from './components/Netflix/netflix-index.jsx'
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Form /> */}
     {/* <Login/> */}
     {/* <NetflixIndex/> */}
-    <ClassBinding/>
+    {/* <ClassBinding/> */}
+    <EventBinding/>
   </StrictMode>,
 )
