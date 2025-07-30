@@ -5,6 +5,9 @@ import { DataType } from './components/data-type/data-type.jsx'
 import { Ajax } from './components/ajax/ajax.jsx'
 import { ClassBinding } from './components/classBinding/classBinding.jsx'
 import { EventBinding } from './components/eventBinding/eventBinding.jsx'
+import { EventArgument } from './components/eventArgument/eventArgument.jsx'
+import { EventPropagation } from './components/eventPropagation/eventPropagation.jsx'
+import { TwoWayBind } from './components/twoWayBind/twoWayBind.jsx'
 import { Form } from './components/form/form.jsx'
 import { Login } from './components/login/login.jsx'
 import { NetflixIndex } from './components/Netflix/netflix-index.jsx'
@@ -26,6 +29,9 @@ createRoot(document.getElementById('root')).render(
     {/* <Login/> */}
     {/* <NetflixIndex/> */}
     {/* <ClassBinding/> */}
-    <EventBinding/>
-  </StrictMode>,
+    {/* <EventBinding/> */}
+    {/* <EventArgument/> */}
+    {/* <EventPropagation/> */}
+    <TwoWayBind/>
+  </StrictMode>
 )
