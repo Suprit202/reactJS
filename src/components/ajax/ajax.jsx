@@ -23,8 +23,14 @@ export function Ajax() {
     // .then(res => res.json())
     // .then(product => setProduct(product))
 
+    //axios request
     axios.get('product.json')
     .then(res => setProduct(res.data));
+
+    //----------------------> IMPORTANT METHODS <-------------------------------
+    //json.stringify();      //Covert JS object to JSON string
+    //json.parse();          //Convert JSON string to JS Object
+    //res.json();            //Morden way to convsert into JS Object from JSON
   }
 
   useEffect(()=>{

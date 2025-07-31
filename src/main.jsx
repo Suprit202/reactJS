@@ -11,6 +11,9 @@ import { TwoWayBind } from './components/twoWayBind/twoWayBind.jsx'
 import { Form } from './components/form/form.jsx'
 import { Login } from './components/login/login.jsx'
 import { NetflixIndex } from './components/Netflix/netflix-index.jsx'
+import { MouseEvent } from './components/mouseEvent/mouseEvent.jsx'
+import { MouseAnimation } from './components/mouseAnimation/mouseAnimation.jsx'
+import { MouseMove } from './components/mouseMove/mouseMove.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -32,6 +35,9 @@ createRoot(document.getElementById('root')).render(
     {/* <EventBinding/> */}
     {/* <EventArgument/> */}
     {/* <EventPropagation/> */}
-    <TwoWayBind/>
+    {/* <TwoWayBind/> */}
+    {/* <MouseEvent/> */}
+    {/* <MouseAnimation/> */}
+    <MouseMove/>
   </StrictMode>
 )
