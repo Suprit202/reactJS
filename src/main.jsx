@@ -12,6 +12,7 @@ import { Form } from './components/form/form.jsx'
 import { Login } from './components/login/login.jsx'
 import { NetflixIndex } from './components/Netflix/netflix-index.jsx'
 import { MouseEvent } from './components/mouseEvent/mouseEvent.jsx'
+import { KeyBoardEvent } from './components/keyBoardEvent/keyBoardEvent.jsx'
 import { MouseAnimation } from './components/mouseAnimation/mouseAnimation.jsx'
 import { MouseMove } from './components/mouseMove/mouseMove.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')).render(
     {/* <TwoWayBind/> */}
     {/* <MouseEvent/> */}
     {/* <MouseAnimation/> */}
-    <MouseMove/>
+    {/* <MouseMove/> */}
+    <KeyBoardEvent/>
   </StrictMode>
 )
