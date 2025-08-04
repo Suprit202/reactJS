@@ -12,7 +12,7 @@ export function FormUsingFormik() {
 
     if (user.Mobile.length === 0) {
       errors.Mobile = 'Mobile Required';
-    } else if (!user.Mobile.match(/^\+91\d{10}$/)) {
+    } else if (!user.Mobile.match(/\+91\d{10}/)) {
       errors.Mobile = 'Invalid Mobile';
     }
 
