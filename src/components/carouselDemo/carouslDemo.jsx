@@ -3,11 +3,20 @@ import { useState,useRef, useEffect } from "react";
 
 export function CarouselDemo() {
   const [product, setProduct] = useState({id:0 ,title:null ,price:0, description:null, image:null, category:null, rating:{rate:0,count:0}})
+  const [status, setStatus] = useState(null);
 
   let productId = useRef(1);
 
+  let thread = useRef(null);
+
   function loadProductManually(id) {
     axios.get(`https://fakestoreapi.com/products/${id}`)
+    .then(res => setProduct(res.data));
+  }
+
+  function loadProductAutomatically() {
+    productId.current = productId.current + 1;
+    axios.get(`https://fakestoreapi.com/products/${productId.current}`)
     .then(res => setProduct(res.data));
   }
 
@@ -24,6 +33,16 @@ export function CarouselDemo() {
   function handelPreviousClick() {
     productId.current = productId.current - 1;
     loadProductManually(productId.current);
+  }
+
+  function handelPlayClick() {
+    thread.current = setInterval(loadProductAutomatically,3000);
+    setStatus("Slide Show - Auto");
+  }
+
+  function handelPushClick() {
+    clearInterval(thread.current);
+    setStatus("Slide Show - Pushed")
   }
 
   useEffect(() => {
@@ -75,9 +94,9 @@ export function CarouselDemo() {
 
                 <div className="card-footer text-center">
 
-                    <button className="btn btn-success bi bi-play"></button>
+                    <button className="btn btn-success bi bi-play" onClick={handelPlayClick}></button>
 
-                    <button className="btn btn-danger mx-2 bi bi-pause"></button>
+                    <button className="btn btn-danger mx-2 bi bi-pause" onClick={handelPushClick}></button>
 
                 </div>
 

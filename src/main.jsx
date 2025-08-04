@@ -15,11 +15,13 @@ import { MouseEvent } from './components/mouseEvent/mouseEvent.jsx'
 import { KeyBoardEvent } from './components/keyBoardEvent/keyBoardEvent.jsx'
 import { EmiCalculator } from './components/emiCalculator/emiCalculator.jsx'
 import { CarouselDemo } from './components/carouselDemo/carouslDemo.jsx'
+import { FormDemo } from './components/formDemo/formDemo.jsx'
 import { StopWatch } from './components/stopWatch/stopWatch.jsx'
 import { MouseAnimation } from './components/mouseAnimation/mouseAnimation.jsx'
 import { MouseMove } from './components/mouseMove/mouseMove.jsx'
 import { ThrottleDemo } from './components/throttleDemo/throttleDemo.jsx'
 import { ButtonDemo } from './components/buttonEvent/buttonEvent.jsx'
+import { FormUsingFormik } from './components/formUsingFormic/formUsingFormik.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -50,6 +52,8 @@ createRoot(document.getElementById('root')).render(
     {/* <ButtonDemo/> */}
     {/* <ThrottleDemo/> */}
     {/* <StopWatch/> */}
-    <CarouselDemo/>
+    {/* <CarouselDemo/> */}
+    {/* <FormDemo/> */}
+    <FormUsingFormik/>
   </StrictMode>
 )
