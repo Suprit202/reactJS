@@ -23,6 +23,8 @@ import { ThrottleDemo } from './components/throttleDemo/throttleDemo.jsx'
 import { ButtonDemo } from './components/buttonEvent/buttonEvent.jsx'
 import { FormUsingFormik } from './components/formUsingFormic/formUsingFormik.jsx'
 import { FormDemo1 } from './components/formDemo1/formDemo1.jsx'
+import { FormNew } from './form-new.jsx'
+import { ControlledDemo } from './controlled-demo.jsx'
 import { ReactHook } from './components/reactHook/reactHook.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
@@ -58,6 +60,8 @@ createRoot(document.getElementById('root')).render(
     {/* <FormDemo/> */}
     {/* <FormUsingFormik/> */}
     {/* <FormDemo1/> */}
-    <ReactHook/>
+    {/* <ReactHook/> */}
+    {/* <FormNew/> */}
+    <ControlledDemo/>
   </StrictMode>
 )
