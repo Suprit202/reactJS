@@ -1,0 +1,37 @@
+[
+  {
+    "product":"Apple",
+    "category":"Fruit",
+    "price":"100"
+  },
+  {
+    "product":"TV",
+    "category":"Electronics",
+    "price":"20000"
+  },
+  {
+    "product":"IPhone",
+    "category":"Electronics",
+    "price":"60000"
+  },
+  {
+    "product":"Tshirt",
+    "category":"Fashion",
+    "price":"1599"
+  },
+  {
+    "product":"Pendent",
+    "category":"Jewellry",
+    "price":"30000"
+  },
+  {
+    "product":"Bangle",
+    "category":"Jewellry",
+    "price":"45000"
+  },
+  {
+    "product":"Banana",
+    "category":"Fruit",
+    "price":"50"
+  }
+]

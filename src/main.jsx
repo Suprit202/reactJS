@@ -27,6 +27,7 @@ import { FormNew } from './form-new.jsx'
 import { ConditionDemo } from './coditionalDemo.jsx'
 import { ControlledDemo } from './controlled-demo.jsx'
 import { ControlledDemo1 } from './controlledDemo1.jsx'
+import { DataTable } from './components/dataTable/dataTable.jsx'
 import { ReactHook } from './components/reactHook/reactHook.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
@@ -64,6 +65,7 @@ createRoot(document.getElementById('root')).render(
     {/* <FormNew/> */}
     {/* <ControlledDemo/> */}
     {/* <ConditionDemo/> */}
-    <ControlledDemo1/>
+    {/* <ControlledDemo1/> */}
+    <DataTable/>
   </StrictMode>
 )
