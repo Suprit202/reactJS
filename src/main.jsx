@@ -42,7 +42,7 @@ createRoot(document.getElementById('root')).render(
     {/* <DataType/> */}
     {/* <Ajax/> */}
     {/* <Form /> */}
-    {/* <Login/> */}
+    <Login/>
     {/* <NetflixIndex/> */}
     {/* <ClassBinding/> */}
     {/* <EventBinding/> */}
@@ -66,6 +66,6 @@ createRoot(document.getElementById('root')).render(
     {/* <ControlledDemo/> */}
     {/* <ConditionDemo/> */}
     {/* <ControlledDemo1/> */}
-    <DataTable/>
+    {/* <DataTable/> */}
   </StrictMode>
 )
