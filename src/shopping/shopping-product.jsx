@@ -20,13 +20,12 @@ export function ShoppingProducts() {
   return(
     <div className="row">
       <div className="col-8">
-        <h1>{params.category.toUpperCase}</h1>
+        <h1>{params.category.toUpperCase()}</h1>
         <ol>
           {
             products.map(product => (
               <li key={product.id}><Link to={`details/${product.id}`}>{product.title}</Link></li>
-            )
-          )
+            ))
           }
         </ol>
         <Link to="/">Back To Home</Link>
