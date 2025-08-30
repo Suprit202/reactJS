@@ -1,0 +1,77 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "admin_id": "john_admin",
+      "password": "john@123"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "user_id": "david_nit",
+      "user_name": "David",
+      "password": "david1",
+      "email": "david@outlook.com"
+    },
+    {
+      "id": "2",
+      "user_id": "sam_nit",
+      "user_name": "Sam",
+      "password": "sam1",
+      "email": "sam@outlook.com"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "category_id": 1,
+      "category_name": "Java"
+    },
+    {
+      "id": "2",
+      "category_id": 2,
+      "category_name": "React"
+    },
+    {
+      "id": "3",
+      "category_id": 3,
+      "category_name": "AWS"
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "title": "Java Stream API",
+      "description": "Java Tutorials",
+      "url": "http://www.youtube.com/embed/Yxzqg6pkuO8",
+      "likes": 200,
+      "dislikes": 0,
+      "views": 500,
+      "comments": "Thank you",
+      "category_id": 1
+    },
+    {
+      "id": "2",
+      "title": "React 19 FAQ's",
+      "description": "React JS Interview Tips",
+      "url": "http://www.youtube.com/embed/NJVQA10RPuA",
+      "likes": 300,
+      "dislikes": 0,
+      "views": 400,
+      "comments": "Please upload more videos",
+      "category_id": 2
+    },
+    {
+      "id": "1cc2",
+      "title": "SQL Second Maximum Salary Query",
+      "url": "http://www.youtube.com/embed/5b7BGHzCqDo",
+      "description": "",
+      "likes": 0,
+      "views": 0,
+      "dislikes": 0,
+      "comments": "",
+      "category_id": 0
+    }
+  ]
+}
