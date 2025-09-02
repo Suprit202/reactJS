@@ -1,15 +1,27 @@
 import { useState, useEffect } from "react";
+import { useSort } from "../../hooks/useSort";
+import { useFilter } from "../../hooks/useFilter";
 import axios from "axios";
 
 export function DataTable() {
   const [data, setData] = useState([]);
   const [editingRow, setEditingRow] = useState(null);
-
+  
   useEffect(() => {
     axios.get("item.json").then((res) => {
       setData(res.data);
     });
   }, []);
+
+  function handelSort() {
+    const sortData = useSort(data);
+    setData(sortData);
+  }
+
+  function handelFilter() {
+    const filterData = useFilter(data);
+    setData(filterData);
+  }
 
   // Enable edit mode for a row
   function editRow(index) {
@@ -40,7 +52,7 @@ export function DataTable() {
         <tr className="table-success">
           <th>Product</th>
           <th>Category</th>
-          <th>Price</th>
+          <th>Price <span className="bi bi-sort-numeric-down btn" onClick={() => handelSort()}></span><span className="bi bi-funnel btn" onClick={() => handelFilter()}></span></th>
           <th>Action</th>
         </tr>
       </thead>

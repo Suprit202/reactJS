@@ -3,7 +3,7 @@
     {
       "id": "1",
       "admin_id": "john_admin",
-      "password": "john@123"
+      "password": "123"
     }
   ],
   "users": [
@@ -11,7 +11,7 @@
       "id": "1",
       "user_id": "david_nit",
       "user_name": "David",
-      "password": "david1",
+      "password": "123",
       "email": "david@outlook.com"
     },
     {
@@ -63,9 +63,9 @@
       "category_id": 2
     },
     {
-      "id": "1cc2",
-      "title": "SQL Second Maximum Salary Query",
-      "url": "http://www.youtube.com/embed/5b7BGHzCqDo",
+      "id": "136e",
+      "title": "Curser AI tutorail",
+      "url": "http://www.youtube.com/embed/rlTKsI1d8Dc",
       "description": "",
       "likes": 0,
       "views": 0,
