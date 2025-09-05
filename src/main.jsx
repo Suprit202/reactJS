@@ -39,6 +39,8 @@ import { VideoTutorialIndex } from './videoTutorial/videoTutorialIndex.jsx'
 import { CookiesProvider } from 'react-cookie'
 import { ThemeProvider } from '@mui/material'
 import { createTheme } from '@mui/material/styles';
+import { CustomerLogin } from './components/class/custumer-login.jsx'
+import { Bind } from './components/class/binding.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -99,11 +101,15 @@ createRoot(document.getElementById('root')).render(
     {/* <ReducerDemo/> */}
     {/* <ReactRout/> */}
     {/* <ShoppingIndex/> */}
-    <CookiesProvider>
+
+    {/* <CookiesProvider>
       <ThemeProvider theme={theme}>
         <VideoTutorialIndex/>
       </ThemeProvider>
-    </CookiesProvider>
+    </CookiesProvider> */}
+
+    {/* <CustomerLogin/> */}
+    {/* <Bind/> */}
 
   </StrictMode>
 )
