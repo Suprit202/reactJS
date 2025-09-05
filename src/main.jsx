@@ -41,6 +41,8 @@ import { ThemeProvider } from '@mui/material'
 import { createTheme } from '@mui/material/styles';
 import { CustomerLogin } from './components/class/custumer-login.jsx'
 import { Bind } from './components/class/binding.jsx'
+import { Api } from './components/class/api.jsx'
+import { FormicLogin } from './components/class/formic.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -110,6 +112,8 @@ createRoot(document.getElementById('root')).render(
 
     {/* <CustomerLogin/> */}
     {/* <Bind/> */}
+    {/* <Api/> */}
+    <FormicLogin/>
 
   </StrictMode>
 )
